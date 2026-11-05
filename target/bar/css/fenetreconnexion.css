@@ -1,0 +1,137 @@
+
+/* 1. Réinitialiser les marges et les espacements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Apparence générale de la page */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+            135deg,
+            #2b160c,
+            #704323,
+            #c28b4b
+    );
+}
+
+/* 3. La fenêtre de connexion */
+.Cont {
+    width: 100%;
+    max-width: 430px;
+    padding: 35px;
+    background-color: #fffaf2;
+    border: 2px solid #d6a65d;
+    border-radius: 18px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+
+    text-align: center;
+}
+
+/* 4. Le titre principal */
+h1 {
+    color: #603813;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+/* 5. Les sous-titres */
+h2 {
+    color: #754b29;
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+/* 6. Le formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+/* 7. Les étiquettes des champs */
+label {
+    color: #4a2c19;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* 8. Les champs de saisie */
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #c9b49c;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* 9. Effet lorsque l'utilisateur clique dans un champ */
+input:focus {
+    border-color: #b7791f;
+    box-shadow: 0 0 6px rgba(183, 121, 31, 0.35);
+}
+
+/* 10. Le bouton de connexion */
+button {
+    margin-top: 10px;
+    padding: 14px;
+    background-color: #603813;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* 11. Effet au passage de la souris */
+button:hover {
+    background-color: #a66a24;
+    transform: translateY(-2px);
+}
+
+/* 12. Le texte sous le formulaire */
+p {
+    margin-top: 20px;
+    color: #5c4635;
+    font-size: 14px;
+}
+
+/* 13. Le lien de création de compte */
+a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #9a5b0b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #603813;
+    text-decoration: underline;
+}
+
+/* 14. Adaptation aux petits écrans */
+@media (max-width: 480px) {
+    .Cont {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
