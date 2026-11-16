@@ -18,17 +18,17 @@
         <p>${message}</p>
 
         <form action="<%= request.getContextPath() %>/connexion" method="post">
-            <label for="Nom">Nom de l utilisateur </label>
-            <input type="text" id="Nom" placeholder="Entrer votre nom">
+            <label for="Nom">Nom de l'utilisateur </label>
+            <input type="text" id="Nom" name="nom" placeholder="Entrer votre nom" required>
 
             <label for="Password">Mot de passe</label>
-            <input type="password" id="Password" placeholder="Entrer votre mot de passe">
+            <input type="password" id="Password" name="motdepasse" placeholder="Entrer votre mot de passe" required>
 
             <button type="submit">Se connecter</button>
         </form>
 
-        <p>Vous n'avez pas de compte ?</p>
-        <a href="Inscription.html">Creer mon compte</a>
+        <p>Vous n'avez pas de compte ? </p>
+        <a href="Inscription.html">Creer mon compte </a>
     </div>
 </body>
 </html>
